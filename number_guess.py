@@ -15,7 +15,7 @@ def get_name():
 def play_game(player, number, upperBound):
 	""" Gets each guess from the player.
 
-	name -- The player
+	player -- The player object
 	number -- the secret number
 	upperBound -- The secret number can range from 1 to upperBound
 
@@ -60,7 +60,12 @@ def play_game(player, number, upperBound):
 	return False
 
 def showTitle(top_player, highest_score):
-	""" Shows the opening title of the game. """
+	""" Shows the opening title of the game.
+	
+	top_player -- the player with the highest score
+	highest score -- the highest score that was ever scored on the game
+	                 running on the user's system
+	"""
 	clear_screen()
 	title = \
 	"""
